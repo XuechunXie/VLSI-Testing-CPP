@@ -87,6 +87,7 @@ bool getObjective(Gate* &g, char &v, Circuit* myCircuit);
 void updateDFrontier(Circuit* myCircuit);
 void backtrace(Gate* &pi, char &piVal, Gate* objGate, char objVal, Circuit* myCircuit);
 //--------------------------
+//added by xuechun xie, for project3 part3
 void andNandGateEqual(int gateType,vector<Gate*> &gatePredessors,Gate* gate,FaultEquiv &myFaultEquivGraph);
 void orNorGateEqual(int gateType,vector<Gate*> &gatePredessors,Gate* gate,FaultEquiv &myFaultEquivGraph);
 void notGateEqual(vector<Gate*> &gatePredessors,Gate* gate,FaultEquiv &myFaultEquivGraph);
@@ -94,7 +95,7 @@ void setEquivalent(Gate* gate,FaultEquiv &myFaultEquivGraph);
 
 //----------------
 // Please put the prototypes for functions you add here.
-//added by xuechun xie, for Part2 and Part3
+//added by xuechun xie, for project 1 and projects2
 int gateDepth(Gate* gate);
 void setGateDepth(Gate* gate);
 int finalDepth=1;
